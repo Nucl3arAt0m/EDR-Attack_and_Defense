@@ -58,9 +58,16 @@ Now that we have a live session between the two machines, the attack machine can
 
 On the host machine we can look inside our LimaCharlie SIEM and see telemetry from the attacker. We can identify the payload thats running and see the IP its connected to.
 
-![LC_detection](detection_proc.png)
 ![LC_timeline](LC_Sensor_timeline.png)
+![LC_detection](detection_proc.png)
 
+We can also use LimaCharlie to scan the hash of the payload through VirusTotal; however, it will be clean since we just created the payload ourselves.
+
+![VT_scan](VirusTotal_scan.png)
+
+I wrote a custom rule under D&R rules, that will detect and block the attacks coming from the Sliver server. On the Ubuntu machine we can simulate parts of a ransomware attack, by attempting to delete the volume shadow copies. In LimaCharlie we can view the telemetry and then write a rule that will block the attack entirely. After we create the rule in our SIEM, the Ubuntu machine will have no luck trying the same attack again.
+
+![shell_cmd]
 
 ---
 
