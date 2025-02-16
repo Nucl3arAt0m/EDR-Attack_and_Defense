@@ -40,6 +40,15 @@ The first step to the lab is setting up both machines. The attack machine will r
 ![Detection Alert](LC_Sensor.png)
 ![Detection Alert](LC_Sensor_artifact_collection_rule.png)
 
+#### Ubuntu machine :
+![Detection Alert](ubuntu__machine.png)
+![Detection Alert](ubuntu_terminal.png)
+
+## Attack and the Defense
+
+The first step is to generate our payload on Sliver, and implant the malware into the Windows host machine. Then we can create a command and control session after the malware is executed on the endpoint.
+
+![Sliver]()
 ---
 
 > *"Detection is the first step. Response makes the difference."* 🔐
