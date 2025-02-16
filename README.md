@@ -48,6 +48,7 @@ The first step to the lab is setting up both machines. The attack machine will r
 
 The first step is to generate our payload on Sliver, and implant the malware into the Windows host machine. Then we can create a command and control session after the malware is executed on the endpoint.
 
+![Sliver](sliver.png)
 ![Sliver]()
 ---
 
