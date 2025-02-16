@@ -59,6 +59,7 @@ Now that we have a live session between the two machines, the attack machine can
 On the host machine we can look inside our LimaCharlie SIEM and see telemetry from the attacker. We can identify the payload thats running and see the IP its connected to.
 
 ![LC_detection](detection_proc.png)
+![LC_timeline](LC_Sensor_timeline.png)
 
 
 ---
