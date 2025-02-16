@@ -54,6 +54,11 @@ The first step is to generate our payload on Sliver, and implant the malware int
 Now that we have a live session between the two machines, the attack machine can begin peeking around, checking priveleges, getting host information, and checking what type of security the host has.
 
 ![sliver_cmds](sliver_commands.png)
+![sliver_cmds](C2_cmd3.png)
+
+On the host machine we can look inside our LimaCharlie SIEM and see telemetry from the attacker. We can identify the payload thats running and see the IP its connected to.
+
+![LC_detection](detection_proc.png)
 
 
 ---
