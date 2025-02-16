@@ -7,21 +7,21 @@ This lab is dedicated to simulating a real cyber attack and endpoint detection a
 ## Environment Setup
 
 - **EDR Solution:** LimaCharlie
-- **Operating System:** [Specify OS, e.g., Windows 10, Ubuntu]
-- **Attack Tools Used:** [Mention tools, e.g., Mimikatz, Rubeus, etc.]
+- **Operating System:** Windows 11 VM, Ubuntu-server VM
+- **Attack Tools Used:** Sliver
 - **Defense Mechanism:** LimaCharlie D&R rules
 
 ## Attack Simulation
 
 ### ✅ Credential Access Techniques Tested
-- Dumping credentials using Mimikatz
+- Dumping credentials using Sliver
 - LSASS memory dump analysis
 - Extracting NTLM hashes
 
 ## Defense Implementation
 
 ### ✅ Detection & Response (D&R) Rules
-- **Process monitoring:** Detect suspicious LSASS access
+- **Process monitoring:** Detect suspicious vssadmin.exe
 - **Memory analysis:** Identify unauthorized memory dumps
 - **Behavior-based detection:** Flag known credential dumping patterns
 
