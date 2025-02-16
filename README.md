@@ -65,9 +65,15 @@ We can also use LimaCharlie to scan the hash of the payload through VirusTotal; 
 
 ![VT_scan](VirusTotal_scan.png)
 
+
 I wrote a custom rule under D&R rules, that will detect and block the attacks coming from the Sliver server. On the Ubuntu machine we can simulate parts of a ransomware attack, by attempting to delete the volume shadow copies. In LimaCharlie we can view the telemetry and then write a rule that will block the attack entirely. After we create the rule in our SIEM, the Ubuntu machine will have no luck trying the same attack again.
 
-![shell_cmd]
+![shell_cmd](sliver_shell.png)
+
+in the detections tab, the "Whoami utility Execution" is detected.
+![shell_cmd](.png)
+
+
 
 ---
 
